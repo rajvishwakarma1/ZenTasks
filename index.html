@@ -13,17 +13,27 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script>
+    <script type="module">
+      // Only register a Service Worker in production. In dev, unregister any existing SW
+      // to avoid stale cached content preventing hot updates.
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js')
-            .then(registration => {
-              console.log('SW registered: ', registration);
-            })
-            .catch(registrationError => {
-              console.log('SW registration failed: ', registrationError);
-            });
-        });
+        if (import.meta.env.DEV) {
+          navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(r => r.unregister()));
+          if (window.caches) {
+            caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
+          }
+          console.info('[PWA] Service Worker disabled in development; caches cleared.');
+        } else {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then(registration => {
+                console.log('SW registered: ', registration);
+              })
+              .catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+              });
+          });
+        }
       }
     </script>
   </body>

@@ -52,7 +52,7 @@ const Navigation = () => {
                     </motion.button>
                     
                     <motion.a
-                      href="mailto:contact@yourportfolio.com"
+                      href="mailto:rajvishwakarma303@gmail.com"
                       className="flex items-center justify-center w-9 h-9 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
                     >
                       <SafeIcon icon={FiMail} className="w-5 h-5 text-gray-700 dark:text-gray-300" />

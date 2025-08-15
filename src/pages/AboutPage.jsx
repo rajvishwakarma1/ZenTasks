@@ -87,8 +87,8 @@ const AboutPage = () => {
                   <SafeIcon icon={FiCheckSquare} className="w-10 h-10 text-notion-600 dark:text-notion-400" />
                 </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Your Name</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Full-Stack Developer</p>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Raj Vishwakarma</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">Softwtare Developer</p>
             </div>
 
             <div className="h-20 w-px bg-gray-200 dark:bg-gray-700 hidden md:block"></div>
@@ -99,10 +99,10 @@ const AboutPage = () => {
                   <SafeIcon icon={FiMail} className="w-5 h-5 text-notion-600 dark:text-notion-400" />
                 </div>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:rajvishwakarma303@gmail.com"
                   className="text-gray-700 dark:text-gray-300 hover:text-notion-600 dark:hover:text-notion-400 transition-colors"
                 >
-                  your.email@example.com
+                  rajvishwakarma303@gmail.com
                 </a>
               </div>
 
@@ -111,12 +111,12 @@ const AboutPage = () => {
                   <SafeIcon icon={FiGlobe} className="w-5 h-5 text-notion-600 dark:text-notion-400" />
                 </div>
                 <a
-                  href="https://yourportfolio.com"
+                  href="https://rajvishwakarma.tech/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 dark:text-gray-300 hover:text-notion-600 dark:hover:text-notion-400 transition-colors"
                 >
-                  yourportfolio.com
+                  rajvishwakarma.tech
                 </a>
               </div>
 
@@ -125,12 +125,12 @@ const AboutPage = () => {
                   <SafeIcon icon={FiLinkedin} className="w-5 h-5 text-notion-600 dark:text-notion-400" />
                 </div>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/rajvishwakarma1/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 dark:text-gray-300 hover:text-notion-600 dark:hover:text-notion-400 transition-colors"
                 >
-                  linkedin.com/in/yourusername
+                  linkedin.com/in/rajvishwakarma1
                 </a>
               </div>
 
@@ -139,12 +139,12 @@ const AboutPage = () => {
                   <SafeIcon icon={FiGithub} className="w-5 h-5 text-notion-600 dark:text-notion-400" />
                 </div>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/rajvishwakarma1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 dark:text-gray-300 hover:text-notion-600 dark:hover:text-notion-400 transition-colors"
                 >
-                  github.com/yourusername
+                  github.com/rajvishwakarma1
                 </a>
               </div>
             </div>
